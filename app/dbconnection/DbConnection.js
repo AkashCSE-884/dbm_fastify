@@ -24,16 +24,7 @@ class DbConnection {
             client.release();
         }
     }
-    async callStoredFunction(procedureName, params) {
-        const client = await this.pool.connect();
-        try {
-            const result = await client.query(`SELECT ${procedureName}($1)`, [JSON.stringify(params)]);
-            // return result;
-            return JSON.stringify(result.rows[0]);
-        } finally {
-            client.release();
-        }
-    }
+    ///Send a mail to : akash.sushil28@gmail.com
 }
 
 module.exports = DbConnection;
