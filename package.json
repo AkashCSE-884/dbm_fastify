@@ -1,0 +1,19 @@
+{
+    "name": "dbm_fastify",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.3.1",
+        "fastify": "^4.21.0",
+        "fastify-autoload": "^3.13.0",
+        "fastify-jwt": "^4.2.0",
+        "find-my-way": "^7.6.2",
+        "pg": "^8.11.3"
+    }
+}
